@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Only For You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio autoplay loop hidden>
+    <source src="your-song.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <!-- Left Lyrics Panel -->
+    <div id="lyrics">
+      <h2>⬇️ Read Below ⬇️</h2>
+      <p>
+        Answer...<br>
+        The...<br>
+        Questions...<br>
+        Given...<br>
+        There...<br>
+        ...
+      </p>
+    </div>
+
+    <!-- Right Questions Panel -->
+    <div id="questions">
+      <h2 id="question-text">Q1: Did You Forgive Me ?</h2>
+      <div id="answers">
+        <button onclick="handleAnswer('yes')">Yes</button>
+        <button onclick="handleAnswer('no')">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
